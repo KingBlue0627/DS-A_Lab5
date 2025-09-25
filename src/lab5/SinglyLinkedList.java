@@ -1,4 +1,3 @@
-
 package lab5;
 
 public class SinglyLinkedList{
@@ -22,7 +21,7 @@ public class SinglyLinkedList{
             head = newNode;
             return;
         }
-        newNode.next = head;
+        newNode.next = head;//Creating a new node then setting it as the new head
         head = newNode;
     }
 
@@ -54,7 +53,7 @@ public class SinglyLinkedList{
         if (temp == null) return "0";
         prev.next = temp.next;
         return temp.data;
-    }
+    }//The same syntax just with Id instead of contents
     
     public String display(){
         Node current = head;

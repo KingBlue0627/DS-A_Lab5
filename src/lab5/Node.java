@@ -1,7 +1,7 @@
 package lab5;
 import java.util.Random;
 public class Node {
-    Random r = new Random();
+    Random r = new Random();//For random Ids
     int id;
     String data;
     Node next;
