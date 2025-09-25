@@ -216,6 +216,9 @@ public class Frame extends javax.swing.JFrame {
             delInput.setText("");
             return;
         }
+        if (text.isBlank()){
+            return;
+        }
         
         int input = 0;
         try {
@@ -242,6 +245,11 @@ public class Frame extends javax.swing.JFrame {
             delInput.setText("");
             return;
         }
+        
+        if (input.isBlank()){
+            return;
+        }
+        
         String result = list.deleteName(input);
         if (result=="0"){
             JOptionPane.showMessageDialog(this, "Did not find data matching input", "Match Error", JOptionPane.ERROR_MESSAGE);
