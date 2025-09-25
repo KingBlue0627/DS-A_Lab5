@@ -199,6 +199,9 @@ public class Frame extends javax.swing.JFrame {
             Input.setText("");
             return;
         }
+        if (input==""){
+            return;
+        }
         list.insertEnd(input);
         Input.setText("");
         display();
