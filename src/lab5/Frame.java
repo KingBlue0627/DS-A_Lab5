@@ -188,6 +188,9 @@ public class Frame extends javax.swing.JFrame {
             Input.setText("");
             return;
         }
+        if (input.isBlank()){
+            return;
+        }
         list.insertStart(input);
         Input.setText("");
         display();
@@ -199,7 +202,7 @@ public class Frame extends javax.swing.JFrame {
             Input.setText("");
             return;
         }
-        if (input==""){
+        if (input.isBlank()){
             return;
         }
         list.insertEnd(input);
