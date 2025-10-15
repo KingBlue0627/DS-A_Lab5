@@ -229,7 +229,7 @@ public class Frame extends javax.swing.JFrame {
             return;
         }
         String result = list.deleteId(input);
-        if (result =="0"){
+        if (result.equals("0")){
             JOptionPane.showMessageDialog(this, "Did not find data matching input", "Match Error", JOptionPane.ERROR_MESSAGE);
             delInput.setText("");
         } else {
@@ -251,7 +251,7 @@ public class Frame extends javax.swing.JFrame {
         }
         
         String result = list.deleteName(input);
-        if (result=="0"){
+        if (result.equals("0")){
             JOptionPane.showMessageDialog(this, "Did not find data matching input", "Match Error", JOptionPane.ERROR_MESSAGE);
         } else {
             JOptionPane.showMessageDialog(this, "Successfully deleted " + result);

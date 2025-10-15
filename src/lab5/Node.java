@@ -7,8 +7,10 @@ public class Node {
     Node next;
     
     public Node(String value){
+        int Id = (r.nextInt()/100000);
+        if (Id<0){Id*=-1;}//To turn it to a positive integer :3
         data = value;
         next = null;
-        id = (r.hashCode()/100000);//Division to control digits
+        id = Id;//Division to control digits
     }
 }
